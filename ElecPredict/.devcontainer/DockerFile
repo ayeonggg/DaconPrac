@@ -1,0 +1,10 @@
+FROM tensorflow/tensorflow:2.11.0-gpu-jupyter
+
+RUN apt-get update
+RUN apt-get -y install libgl1-mesa-glx
+RUN pip install -U tensorflow-addons
+RUN pip install pandas
+RUN pip install matplotlib
+RUN pip install seaborn
+RUN pip install scikit-learn
+RUN pip install keras-tcn
